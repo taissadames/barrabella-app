@@ -1,8 +1,10 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 // import { BsFillChatLeftDotsFill } from "react-icons/bs";
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t, i18n } = useTranslation();
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
@@ -15,31 +17,6 @@ const Contact = () => {
       });
       form.current.reset()
   }
-
-  // export default function Contact() {
-  //   const [name, setName] = React.useState("");
-  //   const [email, setEmail] = React.useState("");
-  //   const [message, setMessage] = React.useState("");
-
-  //   function encode(data) {
-  //     return Object.keys(data)
-  //       .map(
-  //         (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-  //       )
-  //       .join("&");
-  //   }
-
-  //   function handleSubmit(e) {
-  //     e.preventDefault();
-  //     fetch("/", {
-  //       method: "POST",
-  //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-  //       body: encode({ "form-name": "test", name, email, message }),
-  //     })
-  //       .then(() => alert("Message sent!"))
-  //       .catch((error) => alert(error));
-  //   }
-
   return (
     <section id="contact" className="relative bg-sky-50">
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
@@ -58,7 +35,7 @@ const Contact = () => {
           <div className="bg-gray-200 relative flex flex-wrap py-6 rounded shadow-md opacity-75">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-black tracking-widest text-xs">
-                ADDRESS
+              {t('ADDRESS')}
               </h2>
               <p className="mt-1">
                 Av. Lúcio Costa, 4700. <br />
@@ -73,7 +50,7 @@ const Contact = () => {
                 taissadames@hotmail.com
               </a>
               <h2 className="title-font font-semibold text-black tracking-widest text-xs mt-4">
-                PHONE
+              {t('PHONE')}
               </h2>
               <p className="leading-relaxed">0424000000</p>
             </div>
@@ -85,10 +62,10 @@ const Contact = () => {
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
           {/* <BsFillChatLeftDotsFill className="w-10 h-10 inline-block mb-4 justify-center" /> */}
           <h2 className="sm:text-4xl text-3xl font-medium title-font text-black mb-10 text-center">
-            Enquiry now
+          {t('Enquiry now')}
           </h2>
           <p className="leading-relaxed mb-10">
-            Send us an email if you've got questions. Otherwise, the host is happy to talk to you via WhatsApp.
+          {t('Send us an email if you have got questions. Otherwise, the host is happy to talk to you via WhatsApp.')}'
           </p>
           <div className="flex justify-center">
             <a href="https://wa.me/5521988629280"><img src="https://cdn-icons-png.flaticon.com/512/174/174879.png" alt="" className="w-10 mb-8 float-left"/></a> 
@@ -96,7 +73,7 @@ const Contact = () => {
           </div>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-black">
-              Name
+            {t('Name')}
             </label>
             <input
               type="text"
@@ -122,7 +99,7 @@ const Contact = () => {
             <label
               htmlFor="message"
               className="leading-7 text-sm text-black">
-              Message
+              {t('Message')}
             </label>
             <textarea
               id="message"
@@ -135,7 +112,7 @@ const Contact = () => {
             type="submit"
             // value="Send"
             className="text-white bg-red-400 border-0 py-2 px-6 focus:outline-none hover:bg-red-500 rounded text-lg">
-            Submit
+            {t('Submit')}
           </button>
         </form>
       </div>
