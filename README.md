@@ -29,13 +29,13 @@ I decided to make a website for their property with the goal of atracting more g
 - Responsive design & mobile-friendly.
 
 ## :scream: Bugs to fix :poop:
-- Translate buttons not working yet.
+- Translate buttons partially working.
 
 ## :sob: Lessons learnt
 - Well, I learnt that if you leave the most complex item for the end, you may not finish it on time...
 
 ## :white_check_mark: Future features
-- Definitely make the translating buttons work.
+- Definitely make the translating buttons work for all the texts.
 - After that, I plan to make the app into a full stack app, like a CRUD app. This was asked by my dad, so he could login as an Admin and make changes to the website himself.
 - I also plan to add Google Analytics so we can keep track of where the visitors come from.
 
