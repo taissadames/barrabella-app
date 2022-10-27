@@ -37,4 +37,7 @@ I decided to make a website for their property with the goal of atracting more g
 ## :white_check_mark: Future features
 - Definitely make the translating buttons work.
 - After that, I plan to make the app into a full stack app, like a CRUD app. This was asked by my dad, so he could login as an Admin and make changes to the website himself.
+- I also plan to add Google Analytics so we can keep track of where the visitors come from.
+
+## Thank you for visiting :)
 
