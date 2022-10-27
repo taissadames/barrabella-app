@@ -23,7 +23,7 @@ I decided to make a website for their property with the goal of atracting more g
 ## :rocket: Cool tech
 - React.
 - Tailwind CSS.
-- Google API.
+- Google Map generator.
 - EmailJS.
 - Surge for Front End deployment.
 - Responsive design & mobile-friendly.
