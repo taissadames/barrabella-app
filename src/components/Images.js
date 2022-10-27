@@ -17,7 +17,7 @@ export default function Images() {
             fuga dolore.
           </p> */}
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div className="flex flex-wrap">
           {images.map((photo) => (
             <a
               href={photo.link}
