@@ -65,7 +65,7 @@ const Contact = () => {
           {t('Enquiry now')}
           </h2>
           <p className="leading-relaxed mb-10">
-          {t('Send us an email if you have got questions. Otherwise, the host is happy to talk to you via WhatsApp.')}'
+          {t('Send us an email or WhatsApp message if you have got questions. Make sure to follow us on Instagram too.')}
           </p>
           <div className="flex justify-center">
             <a href="https://wa.me/5521988629280"><img src="https://cdn-icons-png.flaticon.com/512/174/174879.png" alt="" className="w-10 mb-8 float-left"/></a> 

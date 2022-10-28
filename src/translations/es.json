@@ -1,17 +1,20 @@
 {
   "translation": {
-    "Images": "Imagens",
-    "Amenities": "Facilidades",
-    "Reviews": "Avaliações",
-    "Book Now on Airbnb": "Reserve agora no Airbnb",
-    "Enquiry now!": "Entre em Contato",
-    "ADDRESS": "Endereço",
-    "PHONE": "Telefone",
-    "Enquiry now": "Entre em Contato",
-    "Send us an email if you have got questions. Otherwise, the host is happy to talk to you via WhatsApp.": "Envie um email que respondemos suas perguntas. Ou então, entre em contato via WhatsApp com o Host.",
+    "Images": "Imágenes",
+    "Amenities": "Comodidades",
+    "Reviews": "Reseñas",
+    "Book Now on Airbnb": "Reservar en Airbnb",
+    "Enquiry now!": "Consulta ahora!",
+    "ADDRESS": "DIRECCIÓN",
+    "PHONE": "NÚMERO DE TELÉFONO",
+    "Enquiry now": "Contacta con Nosotros",
+    "Send us an email or WhatsApp message if you have got questions. Make sure to follow us on Instagram too.": "Envíanos un correo electrónico o un mesaje de WhatsApp si tienes perguntas. Asegúrese de seguirnos en Instagram tambié.",
     "Name": "Nome",
-    "Message": "Mensagem",
+    "Message": "Mensaje",
     "Submit": "Enviar",
-    "Guests Reviews": "Avaliações dos Hóspedes"
+    "Guests Reviews": "Reseña de Huéspedes",
+    "amenities_p": "Nuestro moderno condominio ofrece opciones de entretenimiento para adultos y niños, como área de juegos para niños, gimnasio y piscinas con vista al mar."
+    
   }
+
 }

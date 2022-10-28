@@ -1,9 +1,16 @@
 import { HiArrowRight } from "react-icons/hi2";
 import { BiCalendarCheck } from "react-icons/bi";
 import React from "react";
+import i18n from "../i18n";
 import { useTranslation } from 'react-i18next';
 import Translate from "./Translate";
 
+const changeLanguage = (ln) => {
+  return () => {
+    i18n.changeLanguage(ln)
+    console.log(`Language changed to ${ln}`)
+  }
+}
 export default function Navbar() {
   const { t, i18n } = useTranslation();
   return (
@@ -28,10 +35,9 @@ export default function Navbar() {
             Images
           </a>  */}
           <Translate/>
-          <img onClick={Translate} alt="es" src="https://cdn-icons-png.flaticon.com/512/2960/2960689.png" className="w-11 mb-1 mt-1 mr-2 float-right cursor-pointer"></img>
-          <img onClick={Translate} alt="pt" src="https://cdn-icons-png.flaticon.com/512/197/197386.png" className="w-8 mb-1 mt-1 mr-2 float-right cursor-pointer"></img>
-            {/* <a href=""
-              onClick={Translate.en}><img alt="english" src="https://cdn.countryflags.com/thumbs/australia/flag-400.png" className="w-8 mb-1 mt-1 mr-2 float-right" ></img></a>   */}
+          <img onClick={changeLanguage("es")} alt="es" src="https://cdn-icons-png.flaticon.com/512/2960/2960689.png" className="w-11 mb-1 mt-1 mr-2 float-right cursor-pointer"></img>
+          <img onClick={changeLanguage("pt")} alt="pt" src="https://cdn-icons-png.flaticon.com/512/197/197386.png" className="w-8 mb-1 mt-1 mr-2 float-right cursor-pointer"></img>
+          <img onClick={changeLanguage("en")} src="https://cdn.countryflags.com/thumbs/australia/flag-400.png" className="w-8 mb-1 mt-1 mr-2 float-right cursor-pointer" ></img>
           {/* <a href="#english" className="mr-5 hover:text-red-400">
             English
           </a> 
